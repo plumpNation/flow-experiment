@@ -1,0 +1,25 @@
+{
+    "name": "flow-experiment",
+    "version": "1.0.0",
+    "description": "Playground to figure out flow",
+    "main": "build/index.js",
+    "author": "plumpnation <plumpnation@gmail.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "flow-bin": "^0.50.0",
+        "flow-remove-types": "^1.2.1",
+        "npm-watch": "^0.2.0",
+        "prettier": "^1.5.3"
+    },
+    "watch": {
+        "build": "src/*.js",
+        "prettier": "src/*.js"
+    },
+    "scripts": {
+        "build": "flow-remove-types --pretty src/ --out-dir build/",
+        "prettier": "prettier --single-quote --tab-width 4 --print-width 80 --write src/**/*.js",
+        "prepublish": "yarn build",
+        "watch": "npm-watch "
+    }
+}
