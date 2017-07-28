@@ -9,6 +9,21 @@ enough for the time being.
 
 ---
 
+## Setup
+
+```
+yarn global add flow-bin
+yarn install
+```
+
+Setup the `linter-flow` in atom or similar.
+
+```
+yarn watch
+```
+
+---
+
 ## Remove flow types
 Use the pretty option. Otherwise the code is filled with shitespace everywhere. Not sure why that
 is the default but hey, it's free.
@@ -25,8 +40,8 @@ is the default but hey, it's free.
 ---
 
 ## First impressions
-Much faster to get up and running than in typescript. However, since I am thinking of using it
-for a node project, and my only experience with typescript is wedging it into a legacy frontend
-project this is likely an unfair comparison.
+Much faster to get up and running than in typescript. I absolutely love the fact that you only
+are **required** to annotate the boundaries of the modules at first. This makes easing typing into
+your project way easier and quicker, and you can build up your annotations as you need to.
 
 ---
